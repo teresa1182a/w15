@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+        <style>
+        /* 清除預設樣式 */
+        body, ul.navigation, ul.navigation li, ul.navigation ul, a{
+            margin: auto 4rem;
+            padding: 0;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        ul.navigation,ul.navigation li {
+            list-style: none;
+        }
+    
+
+        /* 第一層選單 */
+        ul.navigation li {
+            position: relative;
+            float: left;
+
+        }
+        
+        /* 第一層選單連結樣式 */
+        ul.navigation li a {
+            display: block;
+            padding: 10px 20px;
+            color:#b8926a;
+            background-color: #ffc5c5e0;
+            font-weight: bolder;
+
+        }
+        
+        ul.navigation > li > a:hover{
+            color:#e7a2bf;
+        }
+        
+        /*觸發第一層時,下拉第二層背景樣式(小三角形)*/
+        ul.navigation li ul .top {
+            width:100px; 
+            height:10px; 
+            text-align:center;
+        }
+        
+        /* 第二層選單 */
+        ul.navigation li ul{
+            display: none;
+            float: left;
+            position: absolute;
+            left: 0;    
+            margin: 0;
+            
+        }
+        /* 當第一層選單被觸發時，指定第二層顯示 */
+        ul.navigation li:hover > ul{
+            display: block;
+            
+        }
+
+        /* 第二層或之後 選單樣式 */
+        ul.navigation ul a {
+            width: 100px;
+            padding: 10px 15px;    
+            color: rgb(204, 146, 146);        
+            background:#f6f8b5;
+        }
+        ul.navigation ul a:hover {
+            color:rgba(104, 236, 225, 0.637);      
+        }
+
+        </style>
+
+
+    <header>
+        <div class="logo">
+            <div>MediaQueries</div>
+        </div>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Company</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <div class="search">
+            <form >
+              <input type="text" placeholder="Search.." name="search">
+              <button type="submit">Search</button>
+            </form>
+        
+        </div>
+    </header>
+
+        <body>
+            <ul class="navigation">
+            <li>
+            <a class="a" href="#">W03~W05</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w03/"  target="_blank">W03</a></li>
+            <li><a href="https://teresa1182a.github.io/w04/" target="_blank">W04</a></li>
+            <li><a href="https://teresa1182a.github.io/w05/" target="_blank">W05</a></li>
+            </ul>
+            </li>
+            <li><a class="a" href="#">W07~W08</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w07/" target="_blank">W07</a></li>
+            <li><a href="https://teresa1182a.github.io/w08/" target="_blank">W08</a></li>
+            </ul>
+            </li>
+            <li><a class="a" href="#">W11~W12</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w11/" target="_blank">W11</a></li>
+            <li><a href="https://teresa1182a.github.io/w12/" target="_blank">W12</a></li>
+            </li>
+            </ul>
+            
+            <li><a class="a" href="#">W13~W14</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w13/" target="_blank">W13</a></li>
+            <li><a href="https://teresa1182a.github.io/w14/" target="_blank">W14</a></li>
+            </ul>
+            </li>
+
+   
+            
+            </body>
+
+
+    <section class="articles">
+        <article>
+            <img src="./img/11.jpg" alt="Retro Image 1" >
+            <div  class="info">
+                <h3>HW01</h3>
+                <p > Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/12.png" alt="Retro Image 2">
+            <div class="info">
+                <h3>HW01</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/13.png" alt="Retro Image 3">
+            <div class="info">
+                <h3>HW02</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/14.png" alt="Retro Image 4">
+            <div class="info">
+                <h3>HW02</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/15.png" alt="Retro Image 1">
+            <div class="info">
+                <h3>HW03</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w03" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/16.png" alt="Retro Image 2">
+            <div class="info">
+                <h3>HW04</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w04" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/17.png" alt="Retro Image 3">
+            <div class="info">
+                <h3>HW05</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w05" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/18.png" alt="Retro Image 4">
+            <div class="info">
+                <h3>HW07</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w07" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/19.png" alt="Retro Image 1">
+            <div class="info">
+                <h3>HW08</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w08" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/20.png" alt="Retro Image 2">
+            <div class="info">
+                <h3>HW11</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w11" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/21.png" alt="Retro Image 3">
+            <div class="info">
+                <h3>HW12</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w12" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/22.png" alt="Retro Image 4">
+            <div class="info">
+                <h3>HW13</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w13" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/23.png" alt="Retro Image 4">
+            <div class="info">
+                <h3>HW14</h3>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w14" target="_blank">- Read More -</a>
+            </div>
+        </article>
+    </section>
+</body>
+</html>
