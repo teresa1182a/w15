@@ -4,21 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>期末 PROJECT </title>
+    <title>Homework 15</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+        <style>
+        /* 清除預設樣式 */
+        body, ul.navigation, ul.navigation li, ul.navigation ul, a{
+            margin: auto 4rem;
+            padding: 0;
+            font-size: 13px;
+            text-decoration: none;
+        }
+        ul.navigation,ul.navigation li {
+            list-style: none;
+        }
+    
+
+        /* 第一層選單 */
+        ul.navigation li {
+            position: relative;
+            float: left;
+
+        }
+        
+        /* 第一層選單連結樣式 */
+        ul.navigation li a {
+            display: block;
+            padding: 10px 20px;
+            color:#b8926a;
+            background-color: #ffc5c5e0;
+            font-weight: bolder;
+
+        }
+        
+        ul.navigation > li > a:hover{
+            color:#e7a2bf;
+        }
+        
+        /*觸發第一層時,下拉第二層背景樣式(小三角形)*/
+        ul.navigation li ul .top {
+            width:100px; 
+            height:10px; 
+            text-align:center;
+        }
+        
+        /* 第二層選單 */
+        ul.navigation li ul{
+            display: none;
+            float: left;
+            position: absolute;
+            left: 0;    
+            margin: 0;
+            
+        }
+        /* 當第一層選單被觸發時，指定第二層顯示 */
+        ul.navigation li:hover > ul{
+            display: block;
+            
+        }
+
+        /* 第二層或之後 選單樣式 */
+        ul.navigation ul a {
+            width: 100px;
+            padding: 10px 15px;    
+            color: rgb(204, 146, 146);        
+            background:#f6f8b5;
+        }
+        ul.navigation ul a:hover {
+            color:rgba(104, 236, 225, 0.637);      
+        }
+
+        </style>
+
 
     <header>
         <div class="logo">
-            <a href="http://www.pxmart.com.tw/px/index.px"><div><img src="./img/py.png" alt="" href="http://www.pxmart.com.tw/px/index.px"></div>
-            </div></a>
+            <div>MediaQueries</div>
+        </div>
         <nav>
             <ul>
-                <li>網頁程式設計</li>
-                <li>純數四</li>
-                <li>406190040</li>
-                <li>黃姿芸</li>
+                <li>Home</li>
+                <li>Company</li>
+                <li>About</li>
+                <li>Contact</li>
             </ul>
         </nav>
 
@@ -27,105 +96,46 @@
               <input type="text" placeholder="Search.." name="search">
               <button type="submit">Search</button>
             </form>
+        
         </div>
     </header>
 
-    <div class="as">
-        <ul class="drop-menu ">
-        <li><a  href="http://www.pxmart.com.tw/px/edm.px" style="text-decoration:none;">全聯生活誌</a>
-        </li>
-        <li><a  href="http://www.pxmart.com.tw/px/map.px" style="text-decoration:none;">門市搜尋</a>
-        </li>
-        <li><a  href="#" style="text-decoration:none;">生活提案 v </a>
+        <body>
+            <ul class="navigation">
+            <li>
+            <a class="a" href="#">W03~W05</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w03/"  target="_blank">W03</a></li>
+            <li><a href="https://teresa1182a.github.io/w04/" target="_blank">W04</a></li>
+            <li><a href="https://teresa1182a.github.io/w05/" target="_blank">W05</a></li>
+            </ul>
+            </li>
+            <li><a class="a" href="#">W07~W08</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w07/" target="_blank">W07</a></li>
+            <li><a href="https://teresa1182a.github.io/w08/" target="_blank">W08</a></li>
+            </ul>
+            </li>
+            <li><a class="a" href="#">W11~W12</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w11/" target="_blank">W11</a></li>
+            <li><a href="https://teresa1182a.github.io/w12/" target="_blank">W12</a></li>
+            </li>
+            </ul>
             
-        <ul >
-            <li><a href="http://event.pxmart.com.tw/activity/WINE/"  target="_blank">葡萄酒知識說</a></li>
-            <li><a href="http://event.pxmart.com.tw/offcoffee/"  target="_blank">OFF Coffee</a></li>
-            <li><a href="http://event.pxmart.com.tw/activity/delifood/"  target="_blank">美味堂</a></li>
-            <li><a href="http://event.pxmart.com.tw/activity/freebear/"  target="_blank">福利熊商品</a></li>
-            <li><a href="http://event.pxmart.com.tw/activity/preorder/"  target="_blank">預購誌</a></li>
-            <li><a href="http://event.pxmart.com.tw/activity/1min/"  target="_blank">一分鐘料理王</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/smart.px?catid=1"  target="_blank">聰明攻略</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/recipe.px"  target="_blank">好菜食譜</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/smart.px?catid=2"  target="_blank">有味生活</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/smart.px?catid=3" target="_blank">封面人物</a></li>
-        </ul>
-        </li>
-        <li><a  href="#" style="text-decoration:none;">卡友服務 v</a>
-        <ul >
-            <li><a href="http://www.pxmart.com.tw/px/card_apply.px">申請辦法</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/card_how.px">如何使用</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/card_right.px">權益說明</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/card_electronic_invoice01.px">電子發票</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/card.px#card01">福利卡活動</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/card.px#card02">信用卡活動</a></li>
-            <li><a href="https://goo.gl/2Dvs1N?ladosidg=13243&icmpid=AD025">全聯APP教學</a></li>
-        </ul>
-        </li>
-        <li><a  href="#" style="text-decoration:none;">顧客服務 v</a>
-        <ul >
-            <li><a href="http://www.pxmart.com.tw/px/customer_winners.px">中獎名單</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/customer_faq.px">常見問題</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/customer_coupon.px">全連禮券</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/customer_news.px">新聞中心</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/customer_contact_us.px?ladosidg=12483&icmpid=AD025">聯絡我們</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/pxhtml__PX_fluvaccine1005.px?ladosidg=12484&icmpid=AD025">公費流感疫苗資訊</a></li>
-        </ul>
-        </li>
-        
-        <li><a  href="#" style="text-decoration:none;">關於我們 v</a>
-        <ul >
-            <li><a href="http://www.pxmart.com.tw/px/about_us_history.px">公司歷史</a></li>
-            <li><a href="http://hr.pxmart.com.tw/">企業求才</a></li>
-            <li><a href="https://www.104.com.tw/job/6rip8">廠區徵才</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/about_us_commercial.px">廣告欣賞</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/pxhtml__PX_CompanyIntroductionCHN.px?ladosidg=17682&icmpid=AD025">企業簡介-中文版</a></li>
-            <li><a href="http://www.pxmart.com.tw/px/pxhtml__PX_CompanyIntroductionENG.px?ladosidg=17683&icmpid=AD025">企業簡介-英文版</a></li>
-        </ul>
-        </li>
-
-        <li><a  href="http://www.pxmart.com.tw/px/customer_contact_us2.px" style="text-decoration:none;">商品提案</a>
-        </li>
-
-    </div>
-
-
-    <div class="slider_container">
-        <div>
-            <img src="./img/img1.jpg"  style="display:block; margin:auto;">
-        </div>
-        <div>
-            <img src="./img/img2.jpg"  style="display:block; margin:auto;" >
-        </div>
-        <div>
-            <img src="./img/img3.jpg"   style="display:block; margin:auto;">
-        </div>
-        <div>
-            <img src="./img/img4.jpg"  style="display:block; margin:auto;">
-        </div>
-        <div>
-            <img src="./img/img5.jpg"   style="display:block; margin:auto;">
-        </div>
-        <div>
-            <img src="./img/img6.jpg"   style="display:block; margin:auto;">
-        </div>
-    </div>
-
-
-    <div class="a1">
-        <a href="https://www.pxmartevent.com.tw/px-cms/activity/activityDetails.html?parentId=880&id=885&ladosidg=26213&icmpid=AD007"><img src="./img/a1.png" alt=""></a>
-        <a href="https://www.pxmartevent.com.tw/px-cms/activity/activityDetails.html?parentId=880&id=887&ladosidg=26215&icmpid=AD007"><img src="./img/a2.png" alt=""></a>
-        <a href="https://www.pxmartevent.com.tw/px-cms/activity/activityDetails.html?parentId=880&id=886&ladosidg=26217&icmpid=AD007"><img src="./img/a3.png" alt=""></a>
-    </div>
-
-    <img class="hot" src="./img/hot.png"  style="display:block; margin:auto;">
-    
+            <li><a class="a" href="#">W13~W14</a>
+            <ul>
+            <li><a href="https://teresa1182a.github.io/w13/" target="_blank">W13</a></li>
+            <li><a href="https://teresa1182a.github.io/w14/" target="_blank">W14</a></li>
+            </ul>
+            </li>
+            </body>
 
     <section class="articles">
         <article>
             <img src="./img/11.jpg" alt="Retro Image 1" >
             <div  class="info">
-                <h3>HW01</h3>
+                <a href="https://teresa1182a.github.io/w03/w01-intro-pokemon/intro.html"><h3>HW01</h3></a>
                 <p > Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
             </div>
@@ -133,16 +143,23 @@
         <article>
             <img src="./img/12.PNG" alt="Retro Image 2">
             <div class="info">
-                <h3>HW01</h3>
+                <a href="https://teresa1182a.github.io/w03/w01-intro-pokemon/pokemon.html"><h3>HW01</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
             </div>
         </article>
-       
+        <article>
+            <img src="./img/13.PNG" alt="Retro Image 3">
+            <div class="info">
+                <a href="https://teresa1182a.github.io/w03/w02-imgal/imageGallery.html"><h3>HW02</h3></a>               
+                 <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
+            </div>
+        </article>
         <article>
             <img src="./img/14.PNG" alt="Retro Image 4">
             <div class="info">
-                <h3>HW02</h3>
+                <a href="https://teresa1182a.github.io/w03/w02-imgal/imageGallery.html"><h3>HW02</h3></a>               
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="#" >- Read More -</a>
             </div>
@@ -150,7 +167,7 @@
         <article>
             <img src="./img/15.PNG" alt="Retro Image 1">
             <div class="info">
-                <h3>HW03</h3>
+                <a href="https://teresa1182a.github.io/w03/"><h3>HW03</h3></a>               
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w03" target="_blank">- Read More -</a>
             </div>
@@ -158,7 +175,7 @@
         <article>
             <img src="./img/16.PNG" alt="Retro Image 2">
             <div class="info">
-                <h3>HW04</h3>
+                <a href="https://teresa1182a.github.io/w04/"><h3>HW04</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w04" target="_blank">- Read More -</a>
             </div>
@@ -166,7 +183,7 @@
         <article>
             <img src="./img/17.png" alt="Retro Image 3">
             <div class="info">
-                <h3>HW05</h3>
+                <a href="https://teresa1182a.github.io/w05/"><h3>HW05</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w05" target="_blank">- Read More -</a>
             </div>
@@ -174,7 +191,7 @@
         <article>
             <img src="./img/18.PNG" alt="Retro Image 4">
             <div class="info">
-                <h3>HW07</h3>
+                <a href="https://teresa1182a.github.io/w07/"><h3>HW07</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w07" target="_blank">- Read More -</a>
             </div>
@@ -182,7 +199,7 @@
         <article>
             <img src="./img/19.png" alt="Retro Image 1">
             <div class="info">
-                <h3>HW08</h3>
+                <a href="https://teresa1182a.github.io/w08/"><h3>HW08</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w08" target="_blank">- Read More -</a>
             </div>
@@ -190,7 +207,7 @@
         <article>
             <img src="./img/20.PNG" alt="Retro Image 2">
             <div class="info">
-                <h3>HW11</h3>
+                <a href="https://teresa1182a.github.io/w11/"><h3>HW11</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w11" target="_blank">- Read More -</a>
             </div>
@@ -198,7 +215,7 @@
         <article>
             <img src="./img/21.PNG" alt="Retro Image 3">
             <div class="info">
-                <h3>HW12</h3>
+                <a href="https://teresa1182a.github.io/w12/"><h3>HW12</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w12" target="_blank">- Read More -</a>
             </div>
@@ -206,7 +223,7 @@
         <article>
             <img src="./img/22.png" alt="Retro Image 4">
             <div class="info">
-                <h3>HW13</h3>
+                <a href="https://teresa1182a.github.io/w13/"><h3>HW13</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w13" target="_blank">- Read More -</a>
             </div>
@@ -214,66 +231,27 @@
         <article>
             <img src="./img/23.png" alt="Retro Image 4">
             <div class="info">
-                <h3>HW14</h3>
+                <a href="https://teresa1182a.github.io/w14/"><h3>HW14</h3></a>
                 <p> Github repository </p>
                 <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w14" target="_blank">- Read More -</a>
             </div>
         </article>
+        <article>
+            <img src="./img/24.jpg" alt="Retro Image 4">
+            <div class="info">
+                <a href="https://teresa1182a.github.io/w15/"><h3>HW15</h3></a>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/w15" target="_blank">- Read More -</a>
+            </div>
+        </article>
+        <article>
+            <img src="./img/25.jpg" alt="Retro Image 4">
+            <div class="info">
+                <a href="https://teresa1182a.github.io/project/"><h3>全聯</h3></a>
+                <p> Github repository </p>
+                <a style="border-bottom: 1px solid red;" href="https://github.com/teresa1182a/project" target="_blank">- Read More -</a>
+            </div>
+        </article>
     </section>
-
-
-
-    <section class="links">
-        <div class="links-inner">
-          <ul>
-            <li><h3>快速連結 <img src="./img/paxmart-footer-quick.png" alt=""></h3></li>
-            <li><a href="#">愛心零錢捐徵信</a></li>
-            <li><a href="#">全聯慶祥基金會</a></li>
-            <li><a href="#">全聯佩樺基金會</a></li>
-            <li><a href="#">全聯好菜食譜</a></li>
-            <li><a href="#">全聯生活誌</a></li>
-            <li><a href="#">門市搜尋</a></li>
-            <li><a href="#">農家直採</a></li>
-            
-          </ul>
-          <ul>
-            <li><h3>關於我們<img src="./img/paxmart-footer-about.png" alt=""></h3></li>
-            <li><a href="#">公司歷史</a></li>
-            <li><a href="#">企業求才 </a></li>
-            <li><a href="#"> 廣告欣賞</a></li>
-            <li><a href="#">安全蔬果白皮書</a></li>
-          </ul>
-          <ul>
-            <li><h3>卡友服務 <img src="./img/paxmart-footer-card.png" alt=""></h3></li>
-            <li><a href="#">如何使用</a></li>
-            <li><a href="#">申請辦法</a></li>
-            <li><a href="#">權益說明</a></li>
-            <li><a href="#">電子發票</a></li>
-            <li><a href="#">福利卡活動</a></li>
-            <li><a href="#">信用卡活動</a></li>
-            
-          </ul>
-          <ul>
-            <li><h3>顧客服務<img src="./img/paxmart-footer-customer.png" alt=""></h3></li>
-            <li><a href="#">中獎名單</a></li>
-            <li><a href="#">常見問題</a></li>
-            <li><a href="#">全聯禮券</a></li>
-            <li><a href="#">新聞中心聯絡我</a></li>
-            <li><a href="#">新聞中心</a></li>
-            <li><a href="#">聯絡我們</a></li>
-          </ul>
-          <ul>
-            <li><h3>全聯APP<img src="./img/paxmart-footer-app.png" ></h3></li>
-            <li><a href="https://apps.apple.com/tw/app/quan-lian-fu-li-zhong-xin/id432477263"><img src="./img/App.png" alt=""></a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.pxmart.android&hl=zh_TW"><img src="./img/play.png" alt=""></a></li>
-
-          </ul>
-        </div>
-      </section>
-      <div class="last"> 
-          <img src="./img/paxmart-footer-divier-shadow.png" style="display:block; margin:auto;">
-          <p  style="text-align:center;">全聯實業股份有限公司版權所有 建議使用Chrome瀏覽器以達最佳瀏覽體驗 客服專線：0800-010-178 手機另撥：02-2533-7700 </p>
-          <p  style="text-align:center;">PXGO線上購服務電話請另撥：02-8501-1566</p>
-      </div>
 </body>
 </html>
